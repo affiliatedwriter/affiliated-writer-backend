@@ -1,4 +1,4 @@
-﻿/vendor/
-/logs/
-/public/db-test.php
-/.env
+﻿vendor/
+logs/
+.env
+public/db-test.php
