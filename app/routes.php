@@ -5,8 +5,10 @@ use Slim\App;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Exception\HttpNotFoundException;
+use Psr\Log\LoggerInterface;
+use Throwable;
 
-/* -------------------- helpers -------------------- */
+// --- Helpers and Migrations (এগুলো অপরিবর্তিত) ---
 $readJson = function (Request $req): array {
     $data = $req->getParsedBody();
     if (is_array($data)) return $data;
@@ -27,12 +29,10 @@ $getCurrentUserId = function(PDO $pdo): int {
         $id = $stmt ? (int)$stmt->fetchColumn() : 0;
         return $id > 0 ? $id : 1;
     } catch (Throwable $e) {
-        // টেবিল তৈরি না হয়ে থাকলে ডিফল্ট 1 রিটার্ন করবে
         return 1;
     }
 };
 
-/* -------------------- migrations (SQLite version) -------------------- */
 $ensure = function (PDO $pdo): void {
     $pdo->exec("CREATE TABLE IF NOT EXISTS articles(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, platform TEXT NOT NULL, status TEXT NOT NULL, updated_at TEXT DEFAULT CURRENT_TIMESTAMP)");
     $pdo->exec("CREATE TABLE IF NOT EXISTS feature_flags(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT UNIQUE NOT NULL, enabled INTEGER NOT NULL DEFAULT 1)");
@@ -54,35 +54,43 @@ $ensure = function (PDO $pdo): void {
     }
 };
 
-/* -------------------- attach routes -------------------- */
+// --- মূল অ্যাপ্লিকেশন ফাংশন ---
 return function (App $app) use ($readJson, $json, $ensure, $getCurrentUserId) {
     /** @var PDO $pdo */
     $pdo = $app->getContainer()->get('db');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $ensure($pdo);
 
-    /* ---- CORS Middleware (শুধুমাত্র এখানেই থাকবে) ---- */
-    $app->add(function(Request $req, $handler){
+    // ১. প্রথমে CORS Middleware যোগ করুন
+    $app->add(function(Request $req, $handler) {
         $res = $handler->handle($req);
-        $origin = $req->getHeaderLine('Origin') ?: '*';
-        $allowedOrigins = ['https://affiliated-writer-dashboard.vercel.app', 'http://127.0.0.1:3000']; // আপনার ফ্রন্টএন্ড ডোমেইন যোগ করুন
-        $allow = in_array($origin, $allowedOrigins, true) ? $origin : '*';
-        return $res
-          ->withHeader('Access-Control-Allow-Origin', $allow)
-          ->withHeader('Access-Control-Allow-Credentials', 'true')
-          ->withHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization')
-          ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+        $origin = $req->getHeaderLine('Origin');
+        $allowedOrigins = [
+            'https://affiliated-writer-dashboard.vercel.app',
+            'http://localhost:3000',
+            'http://127.0.0.1:3000'
+        ];
+        if (in_array($origin, $allowedOrigins)) {
+            return $res
+              ->withHeader('Access-Control-Allow-Origin', $origin)
+              ->withHeader('Access-Control-Allow-Credentials', 'true')
+              ->withHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+              ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+        }
+        return $res;
     });
 
-    /* ---- OPTIONS Route (শুধুমাত্র এখানেই থাকবে) ---- */
-    $app->options('/{routes:.+}', fn(Request $r, Response $res) => $res->withStatus(204));
+    // ২. এখন আপনার সব রুট রেজিস্টার করুন
+    // api_routes.php ফাইলের সব রুট এখানে লোড হবে
+    require __DIR__ . '/api_routes.php';
 
-    /* ---- Health Check ---- */
-    $app->get('/api/db/ping', function(Request $r, Response $res) use($json, $pdo){
-        try { $pdo->query("SELECT 1"); return $json($res, ['db'=>'up']); }
-        catch(Throwable $e){ return $json($res, ['db'=>'down','error'=>$e->getMessage()], 500); }
+    // ৩. সবশেষে, রাউটিং এবং এরর Middleware যোগ করুন
+    $app->addRoutingMiddleware();
+    $errorMiddleware = $app->addErrorMiddleware(true, true, true);
+
+    // 404 Not Found এররকে সুন্দরভাবে দেখানোর জন্য হ্যান্ডলার
+    $app->map(['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], '/{routes:.+}', function ($request, $response) {
+        throw new HttpNotFoundException($request);
     });
-    
-    // ---- OTHER API ROUTES ----
-    include __DIR__ . '/api_routes.php';
 };
+

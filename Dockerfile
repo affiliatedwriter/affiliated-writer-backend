@@ -1,8 +1,7 @@
-# PHP 8.2-FPM Alpine base image ব্যবহার করা হচ্ছে
-FROM php:8.2-fpm-alpine
+# PHP 8.2 Alpine base image ব্যবহার করা হচ্ছে
+FROM php:8.2-alpine
 
 # PHP এক্সটেনশনের জন্য প্রয়োজনীয় সিস্টেম লাইব্রেরিগুলো ইন্সটল করা হচ্ছে
-# pdo_sqlite-এর জন্য sqlite-dev এবং pdo_mysql-এর জন্য mariadb-dev অপরিহার্য
 RUN apk update && apk add --no-cache \
     $PHPIZE_DEPS \
     mariadb-dev \
@@ -25,9 +24,9 @@ RUN composer install --no-interaction --no-dev --optimize-autoloader
 # সবশেষে, বাকি সব অ্যাপ্লিকেশন কোড কপি করা হচ্ছে
 COPY . .
 
-# ফাইলের সঠিক পারমিশন সেট করা হচ্ছে (Render-এর জন্য গুরুত্বপূর্ণ)
-RUN chown -R www-data:www-data /app
+# Render ডিফল্টভাবে 10000 পোর্ট ব্যবহার করে, তাই আমরা সেটি এক্সপোজ করছি
+EXPOSE 10000
 
-# 9000 পোর্ট এক্সপোজ করে php-fpm সার্ভার চালু করা হচ্ছে
-EXPOSE 9000
-CMD ["php-fpm"]
+# PHP-এর বিল্ট-ইন ওয়েব সার্ভার চালু করা হচ্ছে
+# এই কমান্ডটি একটি আসল ওয়েব সার্ভার চালু করবে যা Render খুঁজে পাবে
+CMD [ "php", "-S", "0.0.0.0:10000", "-t", "public" ]
