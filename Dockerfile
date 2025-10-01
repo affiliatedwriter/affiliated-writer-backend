@@ -1,28 +1,23 @@
-# syntax=docker/dockerfile:1
+# Dockerfile (root)
+FROM php:8.2-apache
 
-# হালকা ও সোজা—PHP built-in server ইউজ করবো, Render এর $PORT-এ লিসেন করবে
-FROM php:8.2-cli
+# Apache: public/ কে ডকুমেন্টরুট বানাই, mod_rewrite চালু করি
+RUN a2enmod rewrite
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
+RUN sed -ri 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf && \
+    sed -ri 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
-WORKDIR /app
+# PDO + MySQL + SQLite
+RUN docker-php-ext-install pdo pdo_mysql pdo_sqlite
 
-# composer ইনস্টল
-RUN apt-get update && apt-get install -y unzip git \
-  && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
-  && rm -rf /var/lib/apt/lists/*
+# Composer ঢুকাই
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-# প্রথম ধাপে composer ফাইল কপি -> ডিপেন্ডেন্সি ইনস্টল (Docker layer cache কাজে লাগবে)
-COPY composer.json composer.lock* ./
-RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
-
-# এরপর প্রজেক্টের বাকিটা কপি
+# কোড কপি করে ডিপেন্ডেন্সি ইনস্টল
+WORKDIR /var/www/html
 COPY . .
+RUN composer install --no-dev --prefer-dist --no-progress --no-interaction
 
-# অটোলোড রিফ্রেশ (কোড কপি করার পর)
-RUN composer dump-autoload -o
-
-# Render সাধারণত $PORT দেয়; লোকালি 8080 এক্সপোজ করলাম
-EXPOSE 8080
-ENV PORT=8080
-
-# public/ থেকে PHP server চালু (Slim এর index.php এখানেই)
-CMD ["sh", "-c", "php -S 0.0.0.0:$PORT -t public"]
+# healthcheck (ঐচ্ছিক)
+HEALTHCHECK --interval=30s --timeout=5s \
+  CMD php -r 'echo "ok\n";'
