@@ -14,10 +14,12 @@ $readJson = function (Request $req): array {
     $decoded = json_decode($raw, true);
     return is_array($decoded) ? $decoded : [];
 };
+
 $json = function (Response $res, $data, int $code = 200): Response {
     $res->getBody()->write(json_encode($data, JSON_UNESCAPED_UNICODE));
     return $res->withHeader('Content-Type', 'application/json')->withStatus($code);
 };
+
 $getCurrentUserId = function(PDO $pdo): int {
     $id = (int)($pdo->query("SELECT id FROM users ORDER BY id ASC LIMIT 1")->fetchColumn() ?: 0);
     return $id > 0 ? $id : 1;
@@ -25,7 +27,6 @@ $getCurrentUserId = function(PDO $pdo): int {
 
 /* -------------------- migrations (SQLite version) -------------------- */
 $ensure = function (PDO $pdo): void {
-    // ARTICLES
     $pdo->exec("CREATE TABLE IF NOT EXISTS articles(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       title TEXT NOT NULL,
@@ -34,14 +35,12 @@ $ensure = function (PDO $pdo): void {
       updated_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // FEATURE FLAGS
     $pdo->exec("CREATE TABLE IF NOT EXISTS feature_flags(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT UNIQUE NOT NULL,
       enabled INTEGER NOT NULL DEFAULT 1
     )");
 
-    // USERS
     $pdo->exec("CREATE TABLE IF NOT EXISTS users(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
@@ -50,7 +49,6 @@ $ensure = function (PDO $pdo): void {
       credits_expiry TEXT NULL
     )");
 
-    // AI PROVIDERS
     $pdo->exec("CREATE TABLE IF NOT EXISTS ai_providers(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
@@ -64,7 +62,6 @@ $ensure = function (PDO $pdo): void {
       created_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // PROMPT TEMPLATES
     $pdo->exec("CREATE TABLE IF NOT EXISTS prompt_templates(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
@@ -75,7 +72,6 @@ $ensure = function (PDO $pdo): void {
       created_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // WORDPRESS SITES
     $pdo->exec("CREATE TABLE IF NOT EXISTS wordpress_sites(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       title TEXT NOT NULL,
@@ -88,7 +84,6 @@ $ensure = function (PDO $pdo): void {
       created_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // BLOGGER BLOGS
     $pdo->exec("CREATE TABLE IF NOT EXISTS blogger_blogs(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       title TEXT NOT NULL,
@@ -98,7 +93,6 @@ $ensure = function (PDO $pdo): void {
       created_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // AMAZON APIS
     $pdo->exec("CREATE TABLE IF NOT EXISTS amazon_apis(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       user_id INTEGER NOT NULL,
@@ -111,7 +105,6 @@ $ensure = function (PDO $pdo): void {
       created_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // JOBS
     $pdo->exec("CREATE TABLE IF NOT EXISTS jobs(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       type TEXT NOT NULL,
@@ -123,13 +116,12 @@ $ensure = function (PDO $pdo): void {
       updated_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // seed users
+    // seed
     if ((int)$pdo->query("SELECT COUNT(*) FROM users")->fetchColumn() === 0) {
         $pdo->exec("INSERT INTO users(name,email,credits,credits_expiry) VALUES
         ('Admin User','admin@example.com',6300,'2025-12-22'),
         ('Demo Writer','writer@example.com',1200,'2025-11-22')");
     }
-    // seed flags
     if ((int)$pdo->query("SELECT COUNT(*) FROM feature_flags")->fetchColumn() === 0) {
         $flags = ['amazon_api_enabled','bulk_generate_enabled','comparison_table_auto','cta_auto_enable'];
         $ins = $pdo->prepare("INSERT INTO feature_flags(name,enabled) VALUES(?,1)");
@@ -139,7 +131,6 @@ $ensure = function (PDO $pdo): void {
 
 /* -------------------- attach routes -------------------- */
 return function (App $app) use ($readJson, $json, $ensure, $getCurrentUserId) {
-
     /** @var PDO $pdo */
     $pdo = $app->getContainer()->get('db');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -163,6 +154,7 @@ return function (App $app) use ($readJson, $json, $ensure, $getCurrentUserId) {
         try { $pdo->query("SELECT 1"); return $json($res, ['db'=>'up']); }
         catch(Throwable $e){ return $json($res, ['db'=>'down','error'=>$e->getMessage()], 500); }
     });
+
     /* ===== Dashboard quick stats ===== */
     $app->get('/api/admin/overview', function(Request $r, Response $res) use ($json, $pdo){
         $articles = (int)$pdo->query("SELECT COUNT(*) FROM articles")->fetchColumn();
@@ -175,14 +167,14 @@ return function (App $app) use ($readJson, $json, $ensure, $getCurrentUserId) {
         ]);
     });
 
-    /* ===== Articles list (optional UI) ===== */
+    /* ===== Articles list ===== */
     $app->get('/api/articles', function(Request $r, Response $res) use ($json, $pdo){
         $rows = $pdo->query("SELECT id,title,platform,status,updated_at FROM articles ORDER BY id DESC LIMIT 100")
                     ->fetchAll(PDO::FETCH_ASSOC);
         return $json($res, ['articles'=>$rows]);
     });
 
-    /* ===== Feature flags (read/toggle) ===== */
+    /* ===== Feature flags ===== */
     $app->get('/api/admin/feature-flags', function(Request $r, Response $res) use ($json, $pdo){
         $rows = $pdo->query("SELECT id,name,(enabled+0) AS enabled FROM feature_flags ORDER BY name")
                     ->fetchAll(PDO::FETCH_ASSOC);
@@ -196,91 +188,54 @@ return function (App $app) use ($readJson, $json, $ensure, $getCurrentUserId) {
         return $json($res, $row);
     });
 
-    /* ===== ADMIN users (Credits page needs this) ===== */
+    /* ===== Users ===== */
     $app->get('/api/admin/users[/{tail:.*}]', function(Request $r, Response $res) use ($json, $pdo){
         $rows=$pdo->query("SELECT id,name,email,credits,credits_expiry FROM users ORDER BY id ASC")->fetchAll(PDO::FETCH_ASSOC);
         return $json($res, ['data'=>$rows]);
     });
-/* ===== Admin: AI Providers ===== */
-$app->get('/api/admin/providers', function(Request $r, Response $res) use ($json,$pdo){
-    $rows=$pdo->query("SELECT id,name,base_url,model_name,api_key,temperature,priority,assigned_section,is_active
-                       FROM ai_providers ORDER BY priority ASC, id DESC")->fetchAll(PDO::FETCH_ASSOC);
-    return $json($res, ['data'=>$rows]);
-});
-$app->post('/api/admin/providers', function(Request $r, Response $res) use ($json,$readJson,$pdo){
-    $d=$readJson($r);
-    $st=$pdo->prepare("INSERT INTO ai_providers(name,base_url,model_name,api_key,temperature,priority,assigned_section,is_active)
-                       VALUES(?,?,?,?,?,?,?,?)");
-    $st->execute([
-      (string)($d['name']??'Provider'),
-      (string)($d['base_url']??''),
-      (string)($d['model_name']??''),
-      (string)($d['api_key']??''),
-      (float)($d['temperature']??0.7),
-      (int)($d['priority']??10),
-      (string)($d['assigned_section']??'general'),
-      (int)($d['is_active']??1),
-    ]);
-    $id=(int)$pdo->lastInsertId();
-    $row=$pdo->query("SELECT * FROM ai_providers WHERE id={$id}")->fetch(PDO::FETCH_ASSOC);
-    return $json($res, ['data'=>$row], 201);
-});
-$app->put('/api/admin/providers/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$readJson,$pdo){
-    $id=(int)$a['id']; $d=$readJson($r);
-    $st=$pdo->prepare("UPDATE ai_providers SET name=?,base_url=?,model_name=?,api_key=?,temperature=?,priority=?,assigned_section=?,is_active=? WHERE id=?");
-    $st->execute([
-      (string)($d['name']??'Provider'),
-      (string)($d['base_url']??''),
-      (string)($d['model_name']??''),
-      (string)($d['api_key']??''),
-      (float)($d['temperature']??0.7),
-      (int)($d['priority']??10),
-      (string)($d['assigned_section']??'general'),
-      (int)($d['is_active']??1),
-      $id
-    ]);
-    $row=$pdo->query("SELECT * FROM ai_providers WHERE id={$id}")->fetch(PDO::FETCH_ASSOC);
-    return $json($res, ['data'=>$row]);
-});
-$app->delete('/api/admin/providers/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$pdo){
-    $pdo->prepare("DELETE FROM ai_providers WHERE id=?")->execute([(int)$a['id']]);
-    return $json($res, ['deleted'=>true]);
-});
-/* ===== Admin: Prompt Templates ===== */
-$app->get('/api/admin/prompt-templates', function(Request $r, Response $res) use ($json,$pdo){
-    $rows=$pdo->query("SELECT id,name,section,ai_provider_id,template,is_active,created_at
-                       FROM prompt_templates ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
-    return $json($res, ['data'=>$rows]);
-});
-$app->post('/api/admin/prompt-templates', function(Request $r, Response $res) use ($json,$readJson,$pdo){
-    $d=$readJson($r);
-    $st=$pdo->prepare("INSERT INTO prompt_templates(name,section,ai_provider_id,template,is_active) VALUES(?,?,?,?,?)");
-    $st->execute([
-      (string)($d['name']??'Template'),
-      (string)($d['section']??'info_article'),
-      isset($d['ai_provider_id']) && $d['ai_provider_id']!=='' ? (int)$d['ai_provider_id'] : null,
-      (string)($d['template']??''),
-      (int)($d['is_active']??1),
-    ]);
-    return $json($res, ['created'=>true,'id'=>(int)$pdo->lastInsertId()], 201);
-});
-$app->put('/api/admin/prompt-templates/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$readJson,$pdo){
-    $id=(int)$a['id']; $d=$readJson($r);
-    $st=$pdo->prepare("UPDATE prompt_templates SET name=?,section=?,ai_provider_id=?,template=?,is_active=? WHERE id=?");
-    $st->execute([
-      (string)($d['name']??'Template'),
-      (string)($d['section']??'info_article'),
-      isset($d['ai_provider_id']) && $d['ai_provider_id']!=='' ? (int)$d['ai_provider_id'] : null,
-      (string)($d['template']??''),
-      (int)($d['is_active']??1),
-      $id
-    ]);
-    return $json($res, ['updated'=>true]);
-});
-$app->delete('/api/admin/prompt-templates/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$pdo){
-    $pdo->prepare("DELETE FROM prompt_templates WHERE id=?")->execute([(int)$a['id']]);
-    return $json($res, ['deleted'=>true]);
-});
+
+    /* ===== Admin: AI Providers ===== */
+    $app->get('/api/admin/providers', function(Request $r, Response $res) use ($json,$pdo){
+        $rows=$pdo->query("SELECT * FROM ai_providers ORDER BY priority ASC, id DESC")->fetchAll(PDO::FETCH_ASSOC);
+        return $json($res, ['data'=>$rows]);
+    });
+    $app->post('/api/admin/providers', function(Request $r, Response $res) use ($json,$readJson,$pdo){
+        $d=$readJson($r);
+        $st=$pdo->prepare("INSERT INTO ai_providers(name,base_url,model_name,api_key,temperature,priority,assigned_section,is_active)
+                           VALUES(?,?,?,?,?,?,?,?)");
+        $st->execute([
+          (string)($d['name']??'Provider'),
+          (string)($d['base_url']??''),
+          (string)($d['model_name']??''),
+          (string)($d['api_key']??''),
+          (float)($d['temperature']??0.7),
+          (int)($d['priority']??10),
+          (string)($d['assigned_section']??'general'),
+          (int)($d['is_active']??1),
+        ]);
+        $id=(int)$pdo->lastInsertId();
+        $row=$pdo->query("SELECT * FROM ai_providers WHERE id={$id}")->fetch(PDO::FETCH_ASSOC);
+        return $json($res, ['data'=>$row], 201);
+    });
+
+    /* ===== Prompt Templates ===== */
+    $app->get('/api/admin/prompt-templates', function(Request $r, Response $res) use ($json,$pdo){
+        $rows=$pdo->query("SELECT * FROM prompt_templates ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
+        return $json($res, ['data'=>$rows]);
+    });
+    $app->post('/api/admin/prompt-templates', function(Request $r, Response $res) use ($json,$readJson,$pdo){
+        $d=$readJson($r);
+        $st=$pdo->prepare("INSERT INTO prompt_templates(name,section,ai_provider_id,template,is_active) VALUES(?,?,?,?,?)");
+        $st->execute([
+          (string)($d['name']??'Template'),
+          (string)($d['section']??'info_article'),
+          isset($d['ai_provider_id']) && $d['ai_provider_id']!=='' ? (int)$d['ai_provider_id'] : null,
+          (string)($d['template']??''),
+          (int)($d['is_active']??1),
+        ]);
+        return $json($res, ['created'=>true,'id'=>(int)$pdo->lastInsertId()], 201);
+    });
+
     /* ====== PUBLISH: WordPress ====== */
     $app->get('/api/publish/wordpress', function(Request $r, Response $res) use ($json,$pdo){
         $rows=$pdo->query("SELECT id,title,base_url,username,app_password,default_category_id,default_status,is_active
