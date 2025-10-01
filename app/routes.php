@@ -98,7 +98,7 @@ $ensure = function (PDO $pdo): void {
       created_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // AMAZON APIs
+    // AMAZON APIS
     $pdo->exec("CREATE TABLE IF NOT EXISTS amazon_apis(
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       user_id INTEGER NOT NULL,
@@ -123,13 +123,12 @@ $ensure = function (PDO $pdo): void {
       updated_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    /* ---- Seed Data ---- */
+    // seed
     if ((int)$pdo->query("SELECT COUNT(*) FROM users")->fetchColumn() === 0) {
         $pdo->exec("INSERT INTO users(name,email,credits,credits_expiry) VALUES
         ('Admin User','admin@example.com',6300,'2025-12-22'),
         ('Demo Writer','writer@example.com',1200,'2025-11-22')");
     }
-
     if ((int)$pdo->query("SELECT COUNT(*) FROM feature_flags")->fetchColumn() === 0) {
         $flags = ['amazon_api_enabled','bulk_generate_enabled','comparison_table_auto','cta_auto_enable'];
         $ins = $pdo->prepare("INSERT INTO feature_flags(name,enabled) VALUES(?,1)");
