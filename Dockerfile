@@ -31,6 +31,3 @@ RUN chown -R www-data:www-data /app
 # 9000 পোর্ট এক্সপোজ করে php-fpm সার্ভার চালু করা হচ্ছে
 EXPOSE 9000
 CMD ["php-fpm"]
-
-```
----
