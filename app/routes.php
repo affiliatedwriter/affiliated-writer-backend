@@ -4,6 +4,7 @@ declare(strict_types=1);
 use Slim\App;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+use Slim\Exception\HttpNotFoundException;
 
 /* -------------------- helpers -------------------- */
 $readJson = function (Request $req): array {
@@ -167,17 +168,17 @@ return function (App $app) use ($readJson, $json, $ensure, $getCurrentUserId) {
         ]);
     });
 
-    /* ===== Articles list (optional UI) ===== */
+    /* ===== Articles list ===== */
     $app->get('/api/articles', function(Request $r, Response $res) use ($json, $pdo){
         $rows = $pdo->query("SELECT id,title,platform,status,updated_at FROM articles ORDER BY id DESC LIMIT 100")
-                    ->fetchAll(PDO::FETCH_ASSOC);
+                        ->fetchAll(PDO::FETCH_ASSOC);
         return $json($res, ['articles'=>$rows]);
     });
 
-    /* ===== Feature flags (read/toggle) ===== */
+    /* ===== Feature flags ===== */
     $app->get('/api/admin/feature-flags', function(Request $r, Response $res) use ($json, $pdo){
         $rows = $pdo->query("SELECT id,name,(enabled+0) AS enabled FROM feature_flags ORDER BY name")
-                    ->fetchAll(PDO::FETCH_ASSOC);
+                        ->fetchAll(PDO::FETCH_ASSOC);
         return $json($res, ['flags'=>$rows]);
     });
     $app->post('/api/admin/feature-flags/{id:\d+}/toggle', function(Request $r, Response $res, array $a) use ($json, $pdo){
@@ -188,101 +189,104 @@ return function (App $app) use ($readJson, $json, $ensure, $getCurrentUserId) {
         return $json($res, $row);
     });
 
-    /* ===== ADMIN users (Credits page needs this) ===== */
+    /* ===== Users ===== */
     $app->get('/api/admin/users[/{tail:.*}]', function(Request $r, Response $res) use ($json, $pdo){
         $rows=$pdo->query("SELECT id,name,email,credits,credits_expiry FROM users ORDER BY id ASC")->fetchAll(PDO::FETCH_ASSOC);
         return $json($res, ['data'=>$rows]);
     });
-/* ===== Admin: AI Providers ===== */
-$app->get('/api/admin/providers', function(Request $r, Response $res) use ($json,$pdo){
-    $rows=$pdo->query("SELECT id,name,base_url,model_name,api_key,temperature,priority,assigned_section,is_active
-                       FROM ai_providers ORDER BY priority ASC, id DESC")->fetchAll(PDO::FETCH_ASSOC);
-    return $json($res, ['data'=>$rows]);
-});
-$app->post('/api/admin/providers', function(Request $r, Response $res) use ($json,$readJson,$pdo){
-    $d=$readJson($r);
-    $st=$pdo->prepare("INSERT INTO ai_providers(name,base_url,model_name,api_key,temperature,priority,assigned_section,is_active)
-                       VALUES(?,?,?,?,?,?,?,?)");
-    $st->execute([
-      (string)($d['name']??'Provider'),
-      (string)($d['base_url']??''),
-      (string)($d['model_name']??''),
-      (string)($d['api_key']??''),
-      (float)($d['temperature']??0.7),
-      (int)($d['priority']??10),
-      (string)($d['assigned_section']??'general'),
-      (int)($d['is_active']??1),
-    ]);
-    $id=(int)$pdo->lastInsertId();
-    $row=$pdo->query("SELECT * FROM ai_providers WHERE id={$id}")->fetch(PDO::FETCH_ASSOC);
-    return $json($res, ['data'=>$row], 201);
-});
-$app->put('/api/admin/providers/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$readJson,$pdo){
-    $id=(int)$a['id']; $d=$readJson($r);
-    $st=$pdo->prepare("UPDATE ai_providers SET name=?,base_url=?,model_name=?,api_key=?,temperature=?,priority=?,assigned_section=?,is_active=? WHERE id=?");
-    $st->execute([
-      (string)($d['name']??'Provider'),
-      (string)($d['base_url']??''),
-      (string)($d['model_name']??''),
-      (string)($d['api_key']??''),
-      (float)($d['temperature']??0.7),
-      (int)($d['priority']??10),
-      (string)($d['assigned_section']??'general'),
-      (int)($d['is_active']??1),
-      $id
-    ]);
-    $row=$pdo->query("SELECT * FROM ai_providers WHERE id={$id}")->fetch(PDO::FETCH_ASSOC);
-    return $json($res, ['data'=>$row]);
-});
-$app->delete('/api/admin/providers/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$pdo){
-    $pdo->prepare("DELETE FROM ai_providers WHERE id=?")->execute([(int)$a['id']]);
-    return $json($res, ['deleted'=>true]);
-});
-/* ===== Admin: Prompt Templates ===== */
-$app->get('/api/admin/prompt-templates', function(Request $r, Response $res) use ($json,$pdo){
-    $rows=$pdo->query("SELECT id,name,section,ai_provider_id,template,is_active,created_at
-                       FROM prompt_templates ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
-    return $json($res, ['data'=>$rows]);
-});
-$app->post('/api/admin/prompt-templates', function(Request $r, Response $res) use ($json,$readJson,$pdo){
-    $d=$readJson($r);
-    $st=$pdo->prepare("INSERT INTO prompt_templates(name,section,ai_provider_id,template,is_active) VALUES(?,?,?,?,?)");
-    $st->execute([
-      (string)($d['name']??'Template'),
-      (string)($d['section']??'info_article'),
-      isset($d['ai_provider_id']) && $d['ai_provider_id']!=='' ? (int)$d['ai_provider_id'] : null,
-      (string)($d['template']??''),
-      (int)($d['is_active']??1),
-    ]);
-    return $json($res, ['created'=>true,'id'=>(int)$pdo->lastInsertId()], 201);
-});
-$app->put('/api/admin/prompt-templates/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$readJson,$pdo){
-    $id=(int)$a['id']; $d=$readJson($r);
-    $st=$pdo->prepare("UPDATE prompt_templates SET name=?,section=?,ai_provider_id=?,template=?,is_active=? WHERE id=?");
-    $st->execute([
-      (string)($d['name']??'Template'),
-      (string)($d['section']??'info_article'),
-      isset($d['ai_provider_id']) && $d['ai_provider_id']!=='' ? (int)$d['ai_provider_id'] : null,
-      (string)($d['template']??''),
-      (int)($d['is_active']??1),
-      $id
-    ]);
-    return $json($res, ['updated'=>true]);
-});
-$app->delete('/api/admin/prompt-templates/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$pdo){
-    $pdo->prepare("DELETE FROM prompt_templates WHERE id=?")->execute([(int)$a['id']]);
-    return $json($res, ['deleted'=>true]);
-});
+
+    /* ===== Admin: AI Providers ===== */
+    $app->get('/api/admin/providers', function(Request $r, Response $res) use ($json,$pdo){
+        $rows=$pdo->query("SELECT * FROM ai_providers ORDER BY priority ASC, id DESC")->fetchAll(PDO::FETCH_ASSOC);
+        return $json($res, ['data'=>$rows]);
+    });
+    $app->post('/api/admin/providers', function(Request $r, Response $res) use ($json,$readJson,$pdo){
+        $d=$readJson($r);
+        $st=$pdo->prepare("INSERT INTO ai_providers(name,base_url,model_name,api_key,temperature,priority,assigned_section,is_active)
+                                VALUES(?,?,?,?,?,?,?,?)");
+        $st->execute([
+          (string)($d['name']??'Provider'),
+          (string)($d['base_url']??''),
+          (string)($d['model_name']??''),
+          (string)($d['api_key']??''),
+          (float)($d['temperature']??0.7),
+          (int)($d['priority']??10),
+          (string)($d['assigned_section']??'general'),
+          (int)($d['is_active']??1),
+        ]);
+        $id=(int)$pdo->lastInsertId();
+        $row=$pdo->query("SELECT * FROM ai_providers WHERE id={$id}")->fetch(PDO::FETCH_ASSOC);
+        return $json($res, ['data'=>$row], 201);
+    });
+    $app->put('/api/admin/providers/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$readJson,$pdo){
+        $id=(int)$a['id']; $d=$readJson($r);
+        $st=$pdo->prepare("UPDATE ai_providers SET name=?,base_url=?,model_name=?,api_key=?,temperature=?,priority=?,assigned_section=?,is_active=? WHERE id=?");
+        $st->execute([
+          (string)($d['name']??'Provider'),
+          (string)($d['base_url']??''),
+          (string)($d['model_name']??''),
+          (string)($d['api_key']??''),
+          (float)($d['temperature']??0.7),
+          (int)($d['priority']??10),
+          (string)($d['assigned_section']??'general'),
+          (int)($d['is_active']??1),
+          $id
+        ]);
+        $row=$pdo->query("SELECT * FROM ai_providers WHERE id={$id}")->fetch(PDO::FETCH_ASSOC);
+        return $json($res, ['data'=>$row]);
+    });
+    $app->delete('/api/admin/providers/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$pdo){
+        $pdo->prepare("DELETE FROM ai_providers WHERE id=?")->execute([(int)$a['id']]);
+        return $json($res, ['deleted'=>true]);
+    });
+
+    /* ===== Admin: Prompt Templates ===== */
+    $app->get('/api/admin/prompt-templates', function(Request $r, Response $res) use ($json,$pdo){
+        $rows=$pdo->query("SELECT id,name,section,ai_provider_id,template,is_active,created_at
+                                FROM prompt_templates ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
+        return $json($res, ['data'=>$rows]);
+    });
+    $app->post('/api/admin/prompt-templates', function(Request $r, Response $res) use ($json,$readJson,$pdo){
+        $d=$readJson($r);
+        $st=$pdo->prepare("INSERT INTO prompt_templates(name,section,ai_provider_id,template,is_active) VALUES(?,?,?,?,?)");
+        $st->execute([
+          (string)($d['name']??'Template'),
+          (string)($d['section']??'info_article'),
+          isset($d['ai_provider_id']) && $d['ai_provider_id']!=='' ? (int)$d['ai_provider_id'] : null,
+          (string)($d['template']??''),
+          (int)($d['is_active']??1),
+        ]);
+        return $json($res, ['created'=>true,'id'=>(int)$pdo->lastInsertId()], 201);
+    });
+    $app->put('/api/admin/prompt-templates/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$readJson,$pdo){
+        $id=(int)$a['id']; $d=$readJson($r);
+        $st=$pdo->prepare("UPDATE prompt_templates SET name=?,section=?,ai_provider_id=?,template=?,is_active=? WHERE id=?");
+        $st->execute([
+          (string)($d['name']??'Template'),
+          (string)($d['section']??'info_article'),
+          isset($d['ai_provider_id']) && $d['ai_provider_id']!=='' ? (int)$d['ai_provider_id'] : null,
+          (string)($d['template']??''),
+          (int)($d['is_active']??1),
+          $id
+        ]);
+        return $json($res, ['updated'=>true]);
+    });
+    $app->delete('/api/admin/prompt-templates/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$pdo){
+        $pdo->prepare("DELETE FROM prompt_templates WHERE id=?")->execute([(int)$a['id']]);
+        return $json($res, ['deleted'=>true]);
+    });
+
+
     /* ====== PUBLISH: WordPress ====== */
     $app->get('/api/publish/wordpress', function(Request $r, Response $res) use ($json,$pdo){
         $rows=$pdo->query("SELECT id,title,base_url,username,app_password,default_category_id,default_status,is_active
-                           FROM wordpress_sites ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
+                                FROM wordpress_sites ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
         return $json($res, ['data'=>$rows]);
     });
     $app->post('/api/publish/wordpress', function(Request $r, Response $res) use ($json,$readJson,$pdo){
         $d=$readJson($r);
         $st=$pdo->prepare("INSERT INTO wordpress_sites(title,base_url,username,app_password,default_category_id,default_status,is_active)
-                           VALUES(?,?,?,?,?,?,?)");
+                                VALUES(?,?,?,?,?,?,?)");
         $st->execute([
           (string)($d['title']??''),
           (string)($d['base_url']??''),
@@ -363,7 +367,7 @@ $app->delete('/api/admin/prompt-templates/{id:\d+}', function(Request $r, Respon
     $app->get('/api/publish/amazon', function(Request $r, Response $res) use ($json,$pdo,$getCurrentUserId){
         $uid=$getCurrentUserId($pdo);
         $st=$pdo->prepare("SELECT id,title,access_key,secret_key,partner_tag AS partnerTag,country,is_active
-                           FROM amazon_apis WHERE user_id=? ORDER BY id DESC");
+                                FROM amazon_apis WHERE user_id=? ORDER BY id DESC");
         $st->execute([$uid]);
         $rows=$st->fetchAll(PDO::FETCH_ASSOC);
         foreach($rows as &$row){ $row['secret_key']=''; } // don't expose
@@ -373,9 +377,9 @@ $app->delete('/api/admin/prompt-templates/{id:\d+}', function(Request $r, Respon
         $uid=$getCurrentUserId($pdo); $d=$readJson($r);
         $partner = $d['partnerTag'] ?? $d['partner_tag'] ?? '';
         $st=$pdo->prepare("INSERT INTO amazon_apis(user_id,title,access_key,secret_key,partner_tag,country,is_active)
-                           VALUES(?,?,?,?,?,?,?)");
+                                VALUES(?,?,?,?,?,?,?)");
         $st->execute([$uid,(string)($d['title']??''),(string)($d['access_key']??''),(string)($d['secret_key']??''),(string)$partner,(string)($d['country']??'amazon.com - United States (US)'),
-                      (int)($d['is_active']??1)]);
+                          (int)($d['is_active']??1)]);
         return $json($res,['ok'=>true,'id'=>(int)$pdo->lastInsertId()],201);
     });
     $app->put('/api/publish/amazon/{id:\d+}', function(Request $r, Response $res, array $a) use ($json,$readJson,$pdo){
