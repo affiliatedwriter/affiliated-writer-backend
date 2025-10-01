@@ -1,0 +1,6 @@
+.git
+logs
+node_modules
+public/db-test.php
+# vendor লোকাল থেকে কপি করার দরকার নেই; ইমেজে composer install হবে
+vendor
