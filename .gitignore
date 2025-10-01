@@ -1,0 +1,4 @@
+﻿/vendor/
+/logs/
+/public/db-test.php
+/.env
