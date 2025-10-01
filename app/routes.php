@@ -123,12 +123,13 @@ $ensure = function (PDO $pdo): void {
       updated_at TEXT DEFAULT CURRENT_TIMESTAMP
     )");
 
-    // seed
+    // seed users
     if ((int)$pdo->query("SELECT COUNT(*) FROM users")->fetchColumn() === 0) {
         $pdo->exec("INSERT INTO users(name,email,credits,credits_expiry) VALUES
         ('Admin User','admin@example.com',6300,'2025-12-22'),
         ('Demo Writer','writer@example.com',1200,'2025-11-22')");
     }
+    // seed flags
     if ((int)$pdo->query("SELECT COUNT(*) FROM feature_flags")->fetchColumn() === 0) {
         $flags = ['amazon_api_enabled','bulk_generate_enabled','comparison_table_auto','cta_auto_enable'];
         $ins = $pdo->prepare("INSERT INTO feature_flags(name,enabled) VALUES(?,1)");
@@ -162,7 +163,6 @@ return function (App $app) use ($readJson, $json, $ensure, $getCurrentUserId) {
         try { $pdo->query("SELECT 1"); return $json($res, ['db'=>'up']); }
         catch(Throwable $e){ return $json($res, ['db'=>'down','error'=>$e->getMessage()], 500); }
     });
-
     /* ===== Dashboard quick stats ===== */
     $app->get('/api/admin/overview', function(Request $r, Response $res) use ($json, $pdo){
         $articles = (int)$pdo->query("SELECT COUNT(*) FROM articles")->fetchColumn();
