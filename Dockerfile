@@ -1,23 +1,36 @@
-# Dockerfile (root)
-FROM php:8.2-apache
+# PHP 8.2-FPM Alpine base image ব্যবহার করা হচ্ছে
+FROM php:8.2-fpm-alpine
 
-# Apache: public/ কে ডকুমেন্টরুট বানাই, mod_rewrite চালু করি
-RUN a2enmod rewrite
-ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
-RUN sed -ri 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf && \
-    sed -ri 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+# PHP এক্সটেনশনের জন্য প্রয়োজনীয় সিস্টেম লাইব্রেরিগুলো ইন্সটল করা হচ্ছে
+# pdo_sqlite-এর জন্য sqlite-dev এবং pdo_mysql-এর জন্য mariadb-dev অপরিহার্য
+RUN apk update && apk add --no-cache \
+    $PHPIZE_DEPS \
+    mariadb-dev \
+    sqlite-dev \
+    libzip-dev
 
-# PDO + MySQL + SQLite
-RUN docker-php-ext-install pdo pdo_mysql pdo_sqlite
+# এখন প্রয়োজনীয় PHP এক্সটেনশনগুলো ইন্সটল করা হচ্ছে
+RUN docker-php-ext-install pdo pdo_mysql pdo_sqlite zip
 
-# Composer ঢুকাই
-COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+# Composer ইন্সটল করা হচ্ছে
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-# কোড কপি করে ডিপেন্ডেন্সি ইনস্টল
-WORKDIR /var/www/html
+# অ্যাপ্লিকেশনের জন্য ওয়ার্কিং ডিরেক্টরি সেট করা হচ্ছে
+WORKDIR /app
+
+# প্রথমে শুধু Composer ফাইল কপি করে dependency গুলো ইন্সটল করা হচ্ছে
+COPY composer.json composer.lock ./
+RUN composer install --no-interaction --no-dev --optimize-autoloader
+
+# সবশেষে, বাকি সব অ্যাপ্লিকেশন কোড কপি করা হচ্ছে
 COPY . .
-RUN composer install --no-dev --prefer-dist --no-progress --no-interaction
 
-# healthcheck (ঐচ্ছিক)
-HEALTHCHECK --interval=30s --timeout=5s \
-  CMD php -r 'echo "ok\n";'
+# ফাইলের সঠিক পারমিশন সেট করা হচ্ছে (Render-এর জন্য গুরুত্বপূর্ণ)
+RUN chown -R www-data:www-data /app
+
+# 9000 পোর্ট এক্সপোজ করে php-fpm সার্ভার চালু করা হচ্ছে
+EXPOSE 9000
+CMD ["php-fpm"]
+
+```
+---

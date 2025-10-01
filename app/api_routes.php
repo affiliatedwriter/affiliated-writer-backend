@@ -2,6 +2,14 @@
 // This file is included by routes.php to keep it clean.
 // It assumes $app, $json, $readJson, $pdo, $getCurrentUserId are available in its scope.
 
+/* ===== Root URL (Homepage) ===== */
+$app->get('/', function(Request $r, Response $res) use ($json) {
+    return $json($res, [
+        'status' => 'ok',
+        'message' => 'Welcome to the Affiliated Writer API!',
+        'service_health' => '/api/db/ping'
+    ]);
+});
 /* ===== Dashboard ===== */
 $app->get('/api/admin/overview', function(Request $r, Response $res) use ($json, $pdo){
     $articles = (int)$pdo->query("SELECT COUNT(*) FROM articles")->fetchColumn();
