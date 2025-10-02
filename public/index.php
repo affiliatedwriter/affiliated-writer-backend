@@ -66,25 +66,36 @@ $getCurrentUserId = function() use ($pdo): int {
     } catch (Throwable $e) { return 1; }
 };
 
-// --- Middleware (CORS) ---
+// --- Middleware ---
+// CORS Middleware (এটি রাউটিং Middleware-এর আগে থাকতে হবে)
 $app->add(function(Request $req, $handler) {
-    $res = $handler->handle($req);
+    $response = $handler->handle($req);
     $origin = $req->getHeaderLine('Origin');
-    $allowedOrigins = ['https://affiliated-writer-dashboard.vercel.app', 'http://localhost:3000', 'http://127.0.0.1:3000'];
+    $allowedOrigins = [
+        'https://affiliated-writer-dashboard.vercel.app',
+        'http://localhost:3000',
+        'http://127.0.0.1:3000'
+    ];
+
     if (in_array($origin, $allowedOrigins)) {
-        return $res
+        return $response
           ->withHeader('Access-Control-Allow-Origin', $origin)
-          ->withHeader('Access-Control-Allow-Credentials', 'true')
-          ->withHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization')
-          ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+          ->withHeader('Access-control-allow-credentials', 'true')
+          ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
+          ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     }
-    return $res;
+
+    return $response;
 });
+// রাউটিং Middleware যোগ করা
 $app->addRoutingMiddleware();
 
 // --- সব API রুট ---
 
-$app->options('/{routes:.+}', fn(Request $r, Response $res) => $res->withStatus(204));
+// CORS preflight রিকোয়েস্ট হ্যান্ডেল করার জন্য
+$app->options('/{routes:.+}', function (Request $request, Response $response, $args) {
+    return $response;
+});
 
 $app->get('/', function(Request $r, Response $res) use ($json) {
     return $json($res, [
@@ -187,3 +198,4 @@ $app->get('/api/jobs', function($r,$res) use ($json, $pdo){
 // --- Final Error Middleware এবং App Run ---
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 $app->run();
+
