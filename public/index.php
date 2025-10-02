@@ -28,7 +28,6 @@ $json = function (Response $res, $data, int $code = 200): Response {
 // --- DI Container এবং Database Setup ---
 $container = new Container();
 $container->set('db', function () {
-    // Render-এর ফ্রি প্ল্যানের জন্য /tmp ফোল্ডার ব্যবহার করা হচ্ছে
     $db_path = '/tmp/affwriter.db';
     $dsn  = 'sqlite:' . $db_path;
     $opts = [
@@ -67,7 +66,12 @@ $getCurrentUserId = function() use ($pdo): int {
 };
 
 // --- Middleware ---
-// CORS Middleware (এটি রাউটিং Middleware-এর আগে থাকতে হবে)
+// CORS preflight রিকোয়েস্ট (`OPTIONS`) হ্যান্ডেল করার জন্য
+$app->options('/{routes:.+}', function (Request $request, Response $response) {
+    return $response;
+});
+
+// মূল CORS Middleware (এটি রাউটিং Middleware-এর আগে থাকতে হবে)
 $app->add(function(Request $req, $handler) {
     $response = $handler->handle($req);
     $origin = $req->getHeaderLine('Origin');
@@ -80,22 +84,18 @@ $app->add(function(Request $req, $handler) {
     if (in_array($origin, $allowedOrigins)) {
         return $response
           ->withHeader('Access-Control-Allow-Origin', $origin)
-          ->withHeader('Access-control-allow-credentials', 'true')
+          ->withHeader('Access-Control-Allow-Credentials', 'true')
           ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
           ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     }
 
     return $response;
 });
+
 // রাউটিং Middleware যোগ করা
 $app->addRoutingMiddleware();
 
 // --- সব API রুট ---
-
-// CORS preflight রিকোয়েস্ট হ্যান্ডেল করার জন্য
-$app->options('/{routes:.+}', function (Request $request, Response $response, $args) {
-    return $response;
-});
 
 $app->get('/', function(Request $r, Response $res) use ($json) {
     return $json($res, [
@@ -114,15 +114,26 @@ $app->get('/api/db/ping', function(Request $r, Response $res) use($json, $pdo){
     }
 });
 
+$app->post('/api/auth/login', function(Request $r, Response $res) use ($json, $readJson, $pdo) {
+    $body = $readJson($r);
+    $email = $body['email'] ?? '';
+    $password = $body['password'] ?? '';
+
+    // এখানে একটি ডেমো লগইন লজিক দেওয়া হলো।
+    if ($email === 'admin@example.com' && $password === 'password') {
+        $token = 'dummy-jwt-token-for-testing-purposes';
+        return $json($res, ['token' => $token, 'user' => ['name' => 'Admin User', 'email' => $email]]);
+    }
+
+    return $json($res, ['error' => 'Invalid credentials'], 401);
+});
+
 $app->get('/api/admin/overview', function(Request $r, Response $res) use ($json, $pdo){
     $articles = (int)$pdo->query("SELECT COUNT(*) FROM articles")->fetchColumn();
     $prompts  = (int)$pdo->query("SELECT COUNT(*) FROM prompt_templates")->fetchColumn();
     $providers= (int)$pdo->query("SELECT COUNT(*) FROM ai_providers")->fetchColumn();
     $sumCreds = (int)($pdo->query("SELECT COALESCE(SUM(credits),0) FROM users")->fetchColumn() ?: 0);
-    return $json($res, [
-      'articles'=>$articles,'prompts'=>$prompts,'providers'=>$providers,
-      'credits_left'=>$sumCreds,'credits_expiry'=>null
-    ]);
+    return $json($res, ['articles'=>$articles,'prompts'=>$prompts,'providers'=>$providers, 'credits_left'=>$sumCreds,'credits_expiry'=>null]);
 });
 
 $app->get('/api/articles', function(Request $r, Response $res) use ($json, $pdo){
@@ -198,4 +209,3 @@ $app->get('/api/jobs', function($r,$res) use ($json, $pdo){
 // --- Final Error Middleware এবং App Run ---
 $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 $app->run();
-
