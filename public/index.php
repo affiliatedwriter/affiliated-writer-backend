@@ -5,7 +5,7 @@ declare(strict_types=1);
  * Affiliated Writer – Slim 4 single-file backend (index.php)
  * - Env-driven config (DB_DSN / DB_PATH, CORS_ORIGINS, APP_DEBUG)
  * - SQLite stability (WAL, busy_timeout)
- * - CORS preflight (catch-all OPTIONS)
+ * - CORS preflight via Tuupola middleware (no manual OPTIONS route)
  * - Secrets never returned in GET lists
  */
 
@@ -17,7 +17,7 @@ use Throwable;
 use PDO;
 use Tuupola\Middleware\CorsMiddleware;
 
-// ✅ explicit PSR-7/17 factories (auto-detect এড়াতে)
+// ✅ explicit PSR-7/17 factories (avoid auto-detect issues)
 use Nyholm\Psr7\Factory\Psr17Factory;
 use Nyholm\Psr7Server\ServerRequestCreator;
 
@@ -67,6 +67,7 @@ $container->set('db', function () {
         PDO::ATTR_EMULATE_PREPARES   => false,
     ]);
 
+    // SQLite stability tweaks (no-op on non-sqlite)
     try {
         $pdo->exec("PRAGMA journal_mode=WAL;");
         $pdo->exec("PRAGMA synchronous=NORMAL;");
@@ -165,7 +166,7 @@ $container->set('db', function () {
             updated_at TEXT DEFAULT CURRENT_TIMESTAMP
         )");
 
-    // ----- Seeds -----
+    // ----- Seeds (idempotent) -----
     if ((int)$pdo->query("SELECT COUNT(*) FROM users")->fetchColumn() === 0) {
         $pdo->exec("
             INSERT INTO users(name,email,credits,credits_expiry) VALUES
@@ -197,7 +198,7 @@ $getCurrentUserId = function () use ($pdo): int {
     } catch (Throwable $e) { return 1; }
 };
 
-// CORS from env (fallback to defaults)
+// CORS origins from env (fallback to defaults)
 $origins = getenv('CORS_ORIGINS');
 $originList = $origins ? array_map('trim', explode(',', $origins)) : [
     "https://affiliated-writer-dashboard.vercel.app",
@@ -205,7 +206,12 @@ $originList = $origins ? array_map('trim', explode(',', $origins)) : [
     "http://127.0.0.1:3000",
 ];
 
-// 1) CORS first
+/**
+ * ✅ Middleware order matters:
+ * 1) Routing middleware
+ * 2) CORS middleware (adds headers to preflight/route responses)
+ */
+$app->addRoutingMiddleware();
 $app->add(new CorsMiddleware([
     "origin" => $originList,
     "methods" => ["GET","POST","PUT","PATCH","DELETE","OPTIONS"],
@@ -215,17 +221,11 @@ $app->add(new CorsMiddleware([
     "cache" => (int)(getenv('CORS_CACHE') ?: 0),
 ]));
 
-// 2) Routing middleware
-$app->addRoutingMiddleware();
-
 /* -------------------------
    Routes
 ------------------------- */
 
-// Catch-all OPTIONS (preflight)
-$app->options('/{routes:.+}', function (Request $r, Response $res) {
-    return $res->withStatus(204);
-});
+// ❌ No manual OPTIONS route — Tuupola CORS handles preflight itself.
 
 // Health / root
 $app->get('/', function (Request $r, Response $res) use ($json) {
