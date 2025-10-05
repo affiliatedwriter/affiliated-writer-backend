@@ -1,8 +1,10 @@
-# PHP 8.3 + sqlite pdo
+# PHP 8.3 + PDO (sqlite, mysql)
 FROM php:8.3-cli
 
-# System deps (optional git, unzip for composer)
-RUN apt-get update && apt-get install -y git unzip \
+# System deps (git, unzip for composer) + sqlite dev headers
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      git unzip pkg-config libsqlite3-dev \
+ && docker-php-ext-configure pdo_sqlite --with-pdo-sqlite \
  && docker-php-ext-install pdo pdo_sqlite pdo_mysql \
  && rm -rf /var/lib/apt/lists/*
 
