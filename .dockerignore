@@ -1,5 +1,9 @@
 .git
-node_modules
-vendor
-logs
+vendor/
+node_modules/
+composer.phar
 .env
+.env.local
+.idea
+.vscode
+.DS_Store

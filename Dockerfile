@@ -1,32 +1,29 @@
-# PHP 8.2 Alpine base image ব্যবহার করা হচ্ছে
-FROM php:8.2-alpine
+# PHP 8.3 + sqlite pdo
+FROM php:8.3-cli
 
-# PHP এক্সটেনশনের জন্য প্রয়োজনীয় সিস্টেম লাইব্রেরিগুলো ইন্সটল করা হচ্ছে
-RUN apk update && apk add --no-cache \
-    $PHPIZE_DEPS \
-    mariadb-dev \
-    sqlite-dev \
-    libzip-dev
+# System deps (optional git, unzip for composer)
+RUN apt-get update && apt-get install -y git unzip \
+ && docker-php-ext-install pdo pdo_sqlite pdo_mysql \
+ && rm -rf /var/lib/apt/lists/*
 
-# এখন প্রয়োজনীয় PHP এক্সটেনশনগুলো ইন্সটল করা হচ্ছে
-RUN docker-php-ext-install pdo pdo_mysql pdo_sqlite zip
-
-# Composer ইন্সটল করা হচ্ছে
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-
-# অ্যাপ্লিকেশনের জন্য ওয়ার্কিং ডিরেক্টরি সেট করা হচ্ছে
 WORKDIR /app
 
-# প্রথমে শুধু Composer ফাইল কপি করে dependency গুলো ইন্সটল করা হচ্ছে
+# Copy composer files first for better caching
 COPY composer.json composer.lock ./
-RUN composer install --no-interaction --no-dev --optimize-autoloader
 
-# সবশেষে, বাকি সব অ্যাপ্লিকেশন কোড কপি করা হচ্ছে
+# Install composer + deps
+RUN php -r "copy('https://getcomposer.org/installer','composer-setup.php');" \
+ && php composer-setup.php --install-dir=/usr/local/bin --filename=composer \
+ && rm composer-setup.php \
+ && composer install --no-dev --optimize-autoloader --prefer-dist --no-interaction
+
+# Copy the rest
 COPY . .
 
-# Render ডিফল্টভাবে 10000 পোর্ট ব্যবহার করে, তাই আমরা সেটি এক্সপোজ করছি
+# Ensure runtime dir for SQLite (ephemeral on Render)
+RUN mkdir -p /tmp && chmod -R 777 /tmp
+
 EXPOSE 10000
 
-# PHP-এর বিল্ট-ইন ওয়েব সার্ভার চালু করা হচ্ছে
-# এই কমান্ডটি একটি আসল ওয়েব সার্ভার চালু করবে যা Render খুঁজে পাবে
-CMD [ "php", "-S", "0.0.0.0:10000", "-t", "public" ]
+# Start PHP built-in server (MVP)
+CMD ["php", "-S", "0.0.0.0:10000", "-t", "public"]

@@ -1,0 +1,1381 @@
+[02-Sep-2025 12:42:14 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public/wp-blog-header.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 17
+[02-Sep-2025 12:42:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public/wp-blog-header.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php:17
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 17
+[02-Sep-2025 12:48:47 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:48:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:48:48 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:48:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:48:48 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:48:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:48:48 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:48:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:50:07 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:50:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:50:07 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:50:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:50:08 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:50:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:50:08 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 12:50:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app/vendor/autoload.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\public\index.php on line 5
+[02-Sep-2025 14:48:50 UTC] PHP Fatal error:  Uncaught Error: Class "Dotenv\Dotenv" not found in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php on line 11
+[02-Sep-2025 14:51:16 UTC] PHP Fatal error:  Uncaught Error: Class "Dotenv\Dotenv" not found in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php on line 11
+[02-Sep-2025 14:52:18 UTC] PHP Fatal error:  Uncaught Error: Class "Dotenv\Dotenv" not found in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php on line 11
+[02-Sep-2025 14:52:20 UTC] PHP Fatal error:  Uncaught Error: Class "Dotenv\Dotenv" not found in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php on line 11
+[02-Sep-2025 14:54:08 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered unexpected whitespace at [Content-Type, Authorization]. in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Parser\Parser.php:30
+Stack trace:
+#0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\graham-campbell\result-type\src\Error.php(119): Dotenv\Parser\Parser::Dotenv\Parser\{closure}('Encountered une...')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Parser\Parser.php(29): GrahamCampbell\ResultType\Error->mapError(Object(Closure))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Parser\Parser->parse('APP_ENV=local\nA...')
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(12): Dotenv\Dotenv->load()
+#4 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Parser\Parser.php on line 30
+[02-Sep-2025 14:54:09 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered unexpected whitespace at [Content-Type, Authorization]. in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Parser\Parser.php:30
+Stack trace:
+#0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\graham-campbell\result-type\src\Error.php(119): Dotenv\Parser\Parser::Dotenv\Parser\{closure}('Encountered une...')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Parser\Parser.php(29): GrahamCampbell\ResultType\Error->mapError(Object(Closure))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Parser\Parser->parse('APP_ENV=local\nA...')
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(12): Dotenv\Dotenv->load()
+#4 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Parser\Parser.php on line 30
+[02-Sep-2025 15:03:17 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(40): Slim\App->run()
+#11 {main}
+[02-Sep-2025 15:03:23 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(40): Slim\App->run()
+#11 {main}
+[02-Sep-2025 15:18:40 UTC] Slim Application Error
+Type: Illuminate\Database\QueryException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (Connection: default, SQL: select * from `users` where `email` = testdemo@example.com limit 1)
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php
+Line: 824
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(978): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(957): Illuminate\Database\Connection->tryAgainIfCausedByLostConnection(Object(Illuminate\Database\QueryException), 'select * from `...', Array, Object(Closure))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(780): Illuminate\Database\Connection->handleQueryException(Object(Illuminate\Database\QueryException), 'select * from `...', Array, Object(Closure))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(397): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3188): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3173): Illuminate\Database\Query\Builder->runSelect()
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3763): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3172): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Concerns\BuildsQueries.php(366): Illuminate\Database\Query\Builder->get(Array)
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(59): Illuminate\Database\Query\Builder->first()
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(39): Closure->{closure}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(362): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#19 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#20 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#21 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#22 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#23 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#24 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#25 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(40): Slim\App->run()
+#26 {main}
+Previous Error:
+Type: PDOException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\Connector.php
+Line: 66
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\Connector.php(66): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\Connector.php(85): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\Connector.php(48): Illuminate\Database\Connectors\Connector->tryAgainIfCausedByLostConnection(Object(PDOException), 'mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\ConnectionFactory.php(184): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#5 [internal function]: Illuminate\Database\Connectors\ConnectionFactory->Illuminate\Database\Connectors\{closure}()
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(1230): call_user_func(Object(Closure))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(1266): Illuminate\Database\Connection->getPdo()
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(511): Illuminate\Database\Connection->getReadPdo()
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(406): Illuminate\Database\Connection->getPdoForSelect(true)
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(811): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(978): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(957): Illuminate\Database\Connection->tryAgainIfCausedByLostConnection(Object(Illuminate\Database\QueryException), 'select * from `...', Array, Object(Closure))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(780): Illuminate\Database\Connection->handleQueryException(Object(Illuminate\Database\QueryException), 'select * from `...', Array, Object(Closure))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(397): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3188): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3173): Illuminate\Database\Query\Builder->runSelect()
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3763): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3172): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#19 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Concerns\BuildsQueries.php(366): Illuminate\Database\Query\Builder->get(Array)
+#20 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(59): Illuminate\Database\Query\Builder->first()
+#21 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(39): Closure->{closure}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#22 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(362): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#23 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#24 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#25 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#26 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#27 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#28 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#29 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#30 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#31 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#32 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#33 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#34 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#35 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#36 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(40): Slim\App->run()
+#37 {main}
+[02-Sep-2025 15:37:32 UTC] Slim Application Error
+Type: Illuminate\Database\QueryException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it (Connection: default, SQL: select * from `users` where `email` = testdemo@example.com limit 1)
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php
+Line: 824
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(978): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(957): Illuminate\Database\Connection->tryAgainIfCausedByLostConnection(Object(Illuminate\Database\QueryException), 'select * from `...', Array, Object(Closure))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(780): Illuminate\Database\Connection->handleQueryException(Object(Illuminate\Database\QueryException), 'select * from `...', Array, Object(Closure))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(397): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3188): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3173): Illuminate\Database\Query\Builder->runSelect()
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3763): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3172): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Concerns\BuildsQueries.php(366): Illuminate\Database\Query\Builder->get(Array)
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(59): Illuminate\Database\Query\Builder->first()
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(39): Closure->{closure}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(362): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#19 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#20 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#21 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#22 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#23 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#24 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#25 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(40): Slim\App->run()
+#26 {main}
+Previous Error:
+Type: PDOException
+Code: 2002
+Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\Connector.php
+Line: 66
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\Connector.php(66): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\Connector.php(85): Illuminate\Database\Connectors\Connector->createPdoConnection('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\Connector.php(48): Illuminate\Database\Connectors\Connector->tryAgainIfCausedByLostConnection(Object(PDOException), 'mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\MySqlConnector.php(24): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=127....', Array, Array)
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connectors\ConnectionFactory.php(184): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#5 [internal function]: Illuminate\Database\Connectors\ConnectionFactory->Illuminate\Database\Connectors\{closure}()
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(1230): call_user_func(Object(Closure))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(1266): Illuminate\Database\Connection->getPdo()
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(511): Illuminate\Database\Connection->getReadPdo()
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(406): Illuminate\Database\Connection->getPdoForSelect(true)
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(811): Illuminate\Database\Connection->Illuminate\Database\{closure}('select * from `...', Array)
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(978): Illuminate\Database\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(957): Illuminate\Database\Connection->tryAgainIfCausedByLostConnection(Object(Illuminate\Database\QueryException), 'select * from `...', Array, Object(Closure))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(780): Illuminate\Database\Connection->handleQueryException(Object(Illuminate\Database\QueryException), 'select * from `...', Array, Object(Closure))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(397): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3188): Illuminate\Database\Connection->select('select * from `...', Array, true)
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3173): Illuminate\Database\Query\Builder->runSelect()
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3763): Illuminate\Database\Query\Builder->Illuminate\Database\Query\{closure}()
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3172): Illuminate\Database\Query\Builder->onceWithColumns(Array, Object(Closure))
+#19 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Concerns\BuildsQueries.php(366): Illuminate\Database\Query\Builder->get(Array)
+#20 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(59): Illuminate\Database\Query\Builder->first()
+#21 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(39): Closure->{closure}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#22 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(362): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#23 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#24 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#25 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#26 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#27 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#28 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#29 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#30 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#31 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#32 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#33 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#34 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#35 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#36 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(40): Slim\App->run()
+#37 {main}
+[02-Sep-2025 15:39:53 UTC] Slim Application Error
+Type: InvalidArgumentException
+Code: 0
+Message: key must be a string when using hmac
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\firebase\php-jwt\src\JWT.php
+Line: 249
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\firebase\php-jwt\src\JWT.php(219): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1Q...', false, 'HS256')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(25): Firebase\JWT\JWT::encode(Array, false, 'HS256')
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(70): {closure}(10, Array)
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(39): Closure->{closure}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(362): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(40): Slim\App->run()
+#19 {main}
+[02-Sep-2025 15:48:06 UTC] Slim Application Error
+Type: InvalidArgumentException
+Code: 0
+Message: key must be a string when using hmac
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\firebase\php-jwt\src\JWT.php
+Line: 249
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\firebase\php-jwt\src\JWT.php(219): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1Q...', false, 'HS256')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(25): Firebase\JWT\JWT::encode(Array, false, 'HS256')
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(80): {closure}(10, Array)
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(39): Closure->{closure}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(362): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(40): Slim\App->run()
+#19 {main}
+[02-Sep-2025 16:09:16 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:09:16 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:09:17 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:09:17 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:10:27 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:10:27 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:10:29 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:10:29 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:10:32 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:10:32 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:10:38 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:10:38 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:12:07 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:12:07 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:12:10 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:12:10 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:12:35 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:12:35 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:12:35 UTC] Slim Application Error
+Type: InvalidArgumentException
+Code: 0
+Message: key must be a string when using hmac
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\firebase\php-jwt\src\JWT.php
+Line: 249
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\firebase\php-jwt\src\JWT.php(219): Firebase\JWT\JWT::sign('eyJ0eXAiOiJKV1Q...', false, 'HS256')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(25): Firebase\JWT\JWT::encode(Array, false, 'HS256')
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(80): {closure}(10, Array)
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(39): Closure->{closure}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(362): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(52): Slim\App->run()
+#19 {main}
+[02-Sep-2025 16:22:38 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:22:38 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:22:38 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:40:24 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:40:24 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:40:24 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:40:27 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:40:27 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:40:27 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:40:35 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:40:35 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:40:35 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:40:36 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:40:36 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:40:36 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:40:39 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:40:39 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:40:39 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:40:40 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:40:40 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:40:40 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:41:57 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:41:57 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:41:57 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:44:02 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:44:02 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:44:02 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:46:39 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:46:39 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:46:39 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:50:30 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:50:30 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:50:30 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:51:05 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:51:05 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:51:05 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:52:05 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:52:05 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:52:05 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:52:15 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:52:15 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:52:15 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:53:43 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:53:43 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:53:43 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:53:53 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:53:53 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:53:53 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:54:08 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:54:08 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:54:08 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:54:14 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:54:14 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:54:14 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:54:31 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:54:31 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:54:31 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 16:59:51 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 16:59:51 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 16:59:51 UTC] JWT_SECRET loaded = 
+[02-Sep-2025 17:00:41 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/.env
+[02-Sep-2025 17:00:41 UTC] DEBUG: Loaded JWT_SECRET = 
+[02-Sep-2025 17:00:41 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:34:35 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:34:35 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidFileException: Failed to parse dotenv file. Encountered unexpected whitespace at [Content-Type, Authorization]. in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Parser\Parser.php:30
+Stack trace:
+#0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\graham-campbell\result-type\src\Error.php(119): Dotenv\Parser\Parser::Dotenv\Parser\{closure}('Encountered une...')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Parser\Parser.php(29): GrahamCampbell\ResultType\Error->mapError(Object(Closure))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Dotenv.php(222): Dotenv\Parser\Parser->parse('APP_ENV=local\nA...')
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Dotenv.php(237): Dotenv\Dotenv->load()
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(21): Dotenv\Dotenv->safeLoad()
+#5 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\vlucas\phpdotenv\src\Parser\Parser.php on line 30
+[03-Sep-2025 07:37:17 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:37:17 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:37:17 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:39:19 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:39:19 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:39:19 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:43:33 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:43:33 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:43:33 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:43:33 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(108): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#17 {main}
+[03-Sep-2025 07:44:29 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:44:29 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:44:29 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:44:29 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(108): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#17 {main}
+[03-Sep-2025 07:50:55 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:50:55 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:50:55 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:50:55 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 07:55:49 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:55:49 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:55:49 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:55:59 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:55:59 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:55:59 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:55:59 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 07:57:36 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:57:36 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:57:36 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:57:36 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 07:58:09 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:58:09 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:58:09 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:58:32 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:58:32 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:58:32 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:58:32 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 07:58:49 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 07:58:49 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 07:58:49 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 07:58:49 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:01:05 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:01:05 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:01:05 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:01:05 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:01:25 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:01:25 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:01:25 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:01:25 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:01:34 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:01:34 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:01:34 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:01:34 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:05:51 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:05:51 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:05:51 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:05:56 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:05:56 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:05:56 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:06:00 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:06:00 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:06:00 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:06:00 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:06:34 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:06:34 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:06:34 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:06:34 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:10:56 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:10:56 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:10:56 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:10:56 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:11:45 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:11:45 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:11:45 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:11:46 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:11:46 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:11:46 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:11:50 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:11:50 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:11:50 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:11:50 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:11:51 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:11:51 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:11:51 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:11:51 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:11:51 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:11:51 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:11:51 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:11:51 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:11:51 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:11:51 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:11:51 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:11:51 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:11:52 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:11:52 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:11:52 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:11:52 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 08:11:52 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 08:11:52 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 08:11:52 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 08:11:52 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 11:10:14 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 11:10:14 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 11:10:14 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 11:10:14 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 11:10:24 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 11:10:24 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 11:10:24 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 11:10:24 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 11:10:27 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 11:10:27 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 11:10:27 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 11:10:27 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(28): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#13 {main}
+[03-Sep-2025 11:56:07 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 11:56:07 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 11:56:08 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 11:56:08 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(36): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#17 {main}
+[03-Sep-2025 11:56:08 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 11:56:08 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 11:56:08 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 11:56:08 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(36): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#17 {main}
+[03-Sep-2025 11:56:13 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 11:56:13 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 11:56:13 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 11:56:14 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 11:56:14 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 11:56:14 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 12:01:58 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 12:01:58 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 12:01:58 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 12:01:58 UTC] Slim Application Error
+Type: Illuminate\Database\QueryException
+Code: 42S02
+Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'local.article_jobs' doesn't exist (Connection: default, SQL: insert into `article_jobs` (`article_id`, `status`, `created_at`) values (3, queued, 2025-09-03 12:01:58))
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php
+Line: 824
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(778): Illuminate\Database\Connection->runQueryCallback('insert into `ar...', Array, Object(Closure))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\MySqlConnection.php(42): Illuminate\Database\Connection->run('insert into `ar...', Array, Object(Closure))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Processors\MySqlProcessor.php(35): Illuminate\Database\MySqlConnection->insert('insert into `ar...', Array, NULL)
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3853): Illuminate\Database\Query\Processors\MySqlProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `ar...', Array, NULL)
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\Repositories\JobRepo.php(8): Illuminate\Database\Query\Builder->insertGetId(Array)
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\Controllers\ArticleController.php(27): App\Repositories\JobRepo::create(Array)
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(39): App\Controllers\ArticleController->generate(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(362): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\Middleware\JWTAuthMiddleware.php(34): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): App\Middleware\JWTAuthMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\MiddlewareDispatcher))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#19 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#20 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#21 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#22 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#23 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#24 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(36): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#25 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#26 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#27 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#28 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#29 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#30 {main}
+Previous Error:
+Type: PDOException
+Code: 42S02
+Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'local.article_jobs' doesn't exist
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\MySqlConnection.php
+Line: 47
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\MySqlConnection.php(47): PDO->prepare('insert into `ar...')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(811): Illuminate\Database\MySqlConnection->Illuminate\Database\{closure}('insert into `ar...', Array)
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Connection.php(778): Illuminate\Database\Connection->runQueryCallback('insert into `ar...', Array, Object(Closure))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\MySqlConnection.php(42): Illuminate\Database\Connection->run('insert into `ar...', Array, Object(Closure))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Processors\MySqlProcessor.php(35): Illuminate\Database\MySqlConnection->insert('insert into `ar...', Array, NULL)
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\illuminate\database\Query\Builder.php(3853): Illuminate\Database\Query\Processors\MySqlProcessor->processInsertGetId(Object(Illuminate\Database\Query\Builder), 'insert into `ar...', Array, NULL)
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\Repositories\JobRepo.php(8): Illuminate\Database\Query\Builder->insertGetId(Array)
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\Controllers\ArticleController.php(27): App\Repositories\JobRepo::create(Array)
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(39): App\Controllers\ArticleController->generate(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(362): Slim\Handlers\Strategies\RequestResponse->__invoke(Array, Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\Middleware\JWTAuthMiddleware.php(34): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): App\Middleware\JWTAuthMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\MiddlewareDispatcher))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#19 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#20 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#21 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#22 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#23 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#24 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#25 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#26 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(36): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#27 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#28 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#29 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#30 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#31 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#32 {main}
+[03-Sep-2025 12:02:11 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 12:02:11 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 12:02:11 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 12:02:15 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 12:02:15 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 12:02:15 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 12:03:33 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 12:03:33 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 12:03:33 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 12:03:33 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(62): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(20): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\routes.php(36): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#17 {main}
+[03-Sep-2025 12:30:26 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 12:30:26 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 12:30:26 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/middleware.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php on line 41
+[03-Sep-2025 12:30:26 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/middleware.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php on line 41
+[03-Sep-2025 12:30:28 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 12:30:28 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 12:30:28 UTC] PHP Warning:  require(C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/middleware.php): Failed to open stream: No such file or directory in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php on line 41
+[03-Sep-2025 12:30:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/app/middleware.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php:41
+Stack trace:
+#0 {main}
+  thrown in C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php on line 41
+[03-Sep-2025 15:28:15 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 15:28:15 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 15:28:15 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 15:28:36 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 15:28:36 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 15:28:36 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 16:12:30 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 16:12:30 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 16:12:30 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 16:12:30 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(19): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#12 {main}
+[03-Sep-2025 16:12:32 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 16:12:32 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 16:12:32 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 16:12:32 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(19): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#12 {main}
+[03-Sep-2025 16:12:33 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 16:12:33 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 16:12:33 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 16:12:33 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(19): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#12 {main}
+[03-Sep-2025 16:12:38 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 16:12:38 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 16:12:38 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 16:12:56 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 16:12:56 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 16:12:56 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 16:12:56 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(19): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#12 {main}
+[03-Sep-2025 16:13:05 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 16:13:05 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 16:13:05 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 16:13:05 UTC] 404 Not Found
+Type: Slim\Exception\HttpNotFoundException
+Code: 404
+Message: Not found.
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php
+Line: 76
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting(Object(Slim\Psr7\Request))
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(19): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#12 {main}
+[03-Sep-2025 17:08:30 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 17:08:30 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 17:08:30 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 17:08:44 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 17:08:44 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 17:08:44 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 17:08:44 UTC] Slim Application Error
+Type: RuntimeException
+Code: 0
+Message: App\Controllers\ArticleController:generate is not resolvable
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\CallableResolver.php
+Line: 165
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\CallableResolver.php(103): Slim\CallableResolver->assertCallable(Array, 'App\\Controllers...')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\CallableResolver.php(70): Slim\CallableResolver->resolveByPredicate('App\\Controllers...', Array, 'handle')
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(345): Slim\CallableResolver->resolveRoute(Array)
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\Middleware\JWTAuthMiddleware.php(34): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): App\Middleware\JWTAuthMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\MiddlewareDispatcher))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(19): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#19 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#20 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#21 {main}
+[03-Sep-2025 17:09:49 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 17:09:49 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 17:09:49 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 17:09:49 UTC] Slim Application Error
+Type: RuntimeException
+Code: 0
+Message: App\Controllers\ArticleController:generate is not resolvable
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\CallableResolver.php
+Line: 165
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\CallableResolver.php(103): Slim\CallableResolver->assertCallable(Array, 'App\\Controllers...')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\CallableResolver.php(70): Slim\CallableResolver->resolveByPredicate('App\\Controllers...', Array, 'handle')
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(345): Slim\CallableResolver->resolveRoute(Array)
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\Middleware\JWTAuthMiddleware.php(34): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): App\Middleware\JWTAuthMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\MiddlewareDispatcher))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(19): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#19 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#20 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#21 {main}
+[03-Sep-2025 17:10:32 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 17:10:32 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 17:10:32 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 17:10:32 UTC] Slim Application Error
+Type: RuntimeException
+Code: 0
+Message: App\Controllers\ArticleController:generate is not resolvable
+File: C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\CallableResolver.php
+Line: 165
+Trace: #0 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\CallableResolver.php(103): Slim\CallableResolver->assertCallable(Array, 'App\\Controllers...')
+#1 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\CallableResolver.php(70): Slim\CallableResolver->resolveByPredicate('App\\Controllers...', Array, 'handle')
+#2 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(345): Slim\CallableResolver->resolveRoute(Array)
+#3 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#4 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\Middleware\JWTAuthMiddleware.php(34): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#5 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): App\Middleware\JWTAuthMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\MiddlewareDispatcher))
+#6 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#7 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\Route.php(321): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#8 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Routing\RouteRunner.php(74): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#9 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\RoutingMiddleware.php(45): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#10 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process(Object(Slim\Psr7\Request), Object(Slim\Routing\RouteRunner))
+#11 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\BodyParsingMiddleware.php(64): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#12 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\BodyParsingMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#13 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\app\middleware.php(19): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#14 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(283): Closure->{closure}(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#15 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\Middleware\ErrorMiddleware.php(77): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#16 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(129): Slim\Middleware\ErrorMiddleware->process(Object(Slim\Psr7\Request), Object(Psr\Http\Server\RequestHandlerInterface@anonymous))
+#17 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle(Object(Slim\Psr7\Request))
+#18 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(209): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#19 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\vendor\slim\slim\Slim\App.php(193): Slim\App->handle(Object(Slim\Psr7\Request))
+#20 C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new\public\index.php(53): Slim\App->run()
+#21 {main}
+[03-Sep-2025 17:10:57 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 17:10:57 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 17:10:57 UTC] JWT_SECRET loaded = 
+[03-Sep-2025 17:11:05 UTC] DEBUG: Found .env at C:\Users\RJ COMPUTER\Local Sites\affiliated-writer-new/.env
+[03-Sep-2025 17:11:05 UTC] DEBUG: Loaded JWT_SECRET = my_super_secret_key_12345
+[03-Sep-2025 17:11:05 UTC] JWT_SECRET loaded = 

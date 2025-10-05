@@ -1,4 +1,11 @@
-﻿vendor/
-logs/
+﻿# backend
+/vendor/
 .env
-public/db-test.php
+composer.phar
+.idea
+.vscode
+
+# frontend
+/node_modules/
+.env
+.env.local
