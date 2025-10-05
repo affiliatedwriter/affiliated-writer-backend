@@ -3,10 +3,10 @@
   "type": "project",
   "require": {
     "php": "^8.2",
-    "slim/slim": "^4.13",
-    "php-di/php-di": "^7.0",
-    "nyholm/psr7": "^1.8",
-    "tuupola/cors-middleware": "^1.5"
+    "slim/slim": "4.13",
+    "php-di/php-di": "7.0",
+    "nyholm/psr7": "1.8",
+    "tuupola/cors-middleware": "1.5"
   },
   "autoload": {
     "psr-4": {
