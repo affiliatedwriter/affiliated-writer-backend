@@ -17,6 +17,10 @@ use Throwable;
 use PDO;
 use Tuupola\Middleware\CorsMiddleware;
 
+// ✅ explicit PSR-7/17 factories (auto-detect এড়াতে)
+use Nyholm\Psr7\Factory\Psr17Factory;
+use Nyholm\Psr7Server\ServerRequestCreator;
+
 require __DIR__ . '/../vendor/autoload.php';
 
 /* -------------------------
@@ -241,7 +245,7 @@ $app->get('/api/db/ping', function (Request $r, Response $res) use ($json, $pdo)
 $app->post('/api/auth/login', function (Request $r, Response $res) use ($json, $readJson) {
     $body = $readJson($r);
     $email = $body['email'] ?? '';
-       $password = $body['password'] ?? '';
+    $password = $body['password'] ?? '';
     if ($email === 'admin@example.com' && $password === 'password') {
         return $json($res, [
             'token' => 'dummy-jwt-token-for-testing-purposes',
@@ -425,4 +429,9 @@ $app->addErrorMiddleware(
     true
 );
 
-$app->run();
+// ✅ Explicit ServerRequest so Slim doesn't need to auto-detect creators
+$psr17   = new Psr17Factory();
+$creator = new ServerRequestCreator($psr17, $psr17, $psr17, $psr17);
+$request = $creator->fromGlobals();
+
+$app->run($request);
