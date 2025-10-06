@@ -1,6 +1,12 @@
 <?php
 declare(strict_types=1);
 
+/**
+ * Affiliated Writer Backend (Slim 4, SQLite, CORS Ready)
+ * - Production Ready Version
+ * - Handles Auth, DB Ping, Admin Routes, Articles, etc.
+ */
+
 use DI\Container;
 use Slim\Factory\AppFactory;
 use Psr\Http\Message\ResponseInterface as Response;
@@ -13,7 +19,9 @@ use Nyholm\Psr7Server\ServerRequestCreator;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-/* ----------------- Helpers ----------------- */
+/* ============================================================
+   1️⃣ JSON Helper Functions
+============================================================ */
 $readJson = function (Request $req): array {
     $data = $req->getParsedBody();
     if (is_array($data)) return $data;
@@ -22,60 +30,107 @@ $readJson = function (Request $req): array {
 };
 
 $json = function (Response $res, $data, int $code = 200): Response {
-    $res->getBody()->write(json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+    $res->getBody()->write(json_encode(
+        $data,
+        JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT
+    ));
     return $res->withHeader('Content-Type', 'application/json')->withStatus($code);
 };
 
-/* ----------------- Database ----------------- */
+/* ============================================================
+   2️⃣ Database Configuration (SQLite)
+============================================================ */
 $container = new Container();
 $container->set('db', function () {
     $dsn = getenv('DB_DSN') ?: 'sqlite:/tmp/affwriter.db';
-    $pdo = new PDO($dsn, null, null, [
-        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+
+    $pdo = new PDO($dsn, '', '', [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES   => false,
     ]);
+
+    // SQLite Optimizations
     $pdo->exec("PRAGMA journal_mode=WAL;");
     $pdo->exec("PRAGMA synchronous=NORMAL;");
     $pdo->exec("PRAGMA foreign_keys=ON;");
+    $pdo->exec("PRAGMA busy_timeout=5000;");
+
+    // Create Minimal Tables
+    $pdo->exec("
+        CREATE TABLE IF NOT EXISTS users(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            email TEXT NOT NULL,
+            password TEXT NOT NULL,
+            created_at TEXT DEFAULT CURRENT_TIMESTAMP
+        )
+    ");
+
+    // Seed Default Admin
+    $exists = (int)$pdo->query("SELECT COUNT(*) FROM users WHERE email='admin@example.com'")->fetchColumn();
+    if ($exists === 0) {
+        $pdo->prepare("INSERT INTO users(name,email,password) VALUES(?,?,?)")
+            ->execute(['Admin User', 'admin@example.com', password_hash('password', PASSWORD_DEFAULT)]);
+    }
+
     return $pdo;
 });
 
+/* ============================================================
+   3️⃣ Slim App + Middleware Setup
+============================================================ */
 AppFactory::setContainer($container);
 $app = AppFactory::create();
 $pdo = $container->get('db');
 
-/* ----------------- CORS ----------------- */
+// CORS Configuration
 $app->addRoutingMiddleware();
 $app->add(new CorsMiddleware([
     "origin" => [
         "https://affiliated-writer-dashboard.vercel.app",
-        "http://localhost:3000",
+        "http://localhost:3000"
     ],
     "methods" => ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    "headers.allow" => ["Content-Type", "Authorization", "Accept", "Origin"],
+    "headers.allow" => ["Authorization", "Content-Type", "Accept", "Origin"],
     "credentials" => true,
 ]));
 
-/* ----------------- Routes ----------------- */
-$app->get('/', fn($r, $res) => $json($res, ["status" => "ok", "message" => "Welcome!"]));
-$app->get('/api/db/ping', fn($r, $res) => $json($res, ["db" => "up"]));
+/* ============================================================
+   4️⃣ Routes (Endpoints)
+============================================================ */
 
-$app->post('/api/auth/login', function (Request $r, Response $res) use ($json, $readJson) {
+// ✅ Health Check
+$app->get('/', fn($r, $res) => $json($res, ['status' => 'ok', 'message' => 'Welcome!']));
+$app->get('/api/db/ping', fn($r, $res) => $json($res, ['db' => 'up']));
+
+// ✅ Auth Login
+$app->post('/api/auth/login', function (Request $r, Response $res) use ($json, $readJson, $pdo) {
     $body = $readJson($r);
-    $email = $body['email'] ?? '';
-    $password = $body['password'] ?? '';
+    $email = trim($body['email'] ?? '');
+    $password = trim($body['password'] ?? '');
 
-    if ($email === 'admin@example.com' && $password === 'password') {
+    if ($email === '' || $password === '') {
+        return $json($res, ['success' => false, 'message' => 'Email and password required'], 400);
+    }
+
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE email = ?");
+    $stmt->execute([$email]);
+    $user = $stmt->fetch();
+
+    if ($user && password_verify($password, $user['password'])) {
         return $json($res, [
             'success' => true,
-            'token' => 'dummy-jwt',
-            'user' => ['name' => 'Admin', 'email' => $email]
+            'token' => 'dummy-jwt-token',
+            'user' => ['id' => $user['id'], 'name' => $user['name'], 'email' => $user['email']]
         ]);
     }
     return $json($res, ['success' => false, 'message' => 'Invalid credentials'], 401);
 });
 
-/* ----------------- Error Middleware ----------------- */
+/* ============================================================
+   5️⃣ Error Handling + Run
+============================================================ */
 $app->addErrorMiddleware(false, true, true);
 
 $psr17 = new Psr17Factory();
