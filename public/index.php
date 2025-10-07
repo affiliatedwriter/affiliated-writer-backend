@@ -5,98 +5,102 @@ use DI\Container;
 use Slim\Factory\AppFactory;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
-use Tuupola\Middleware\CorsMiddleware;
-use PDO;
 use Throwable;
+use PDO;
+use Tuupola\Middleware\CorsMiddleware;
+use Nyholm\Psr7\Factory\Psr17Factory;
+use Nyholm\Psr7Server\ServerRequestCreator;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-/* ----------------- Helpers ----------------- */
+/* -------------------------
+   Helpers
+------------------------- */
+
 $readJson = fn(Request $req): array =>
-    json_decode((string)$req->getBody(), true) ?? [];
+    json_decode((string)$req->getBody(), true) ?: [];
 
 $json = function (Response $res, $data, int $code = 200): Response {
-    $res->getBody()->write(json_encode(
-        $data,
-        JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES
-    ));
-    return $res->withHeader('Content-Type', 'application/json')
-               ->withStatus($code);
+    $res->getBody()->write(json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+    return $res->withHeader('Content-Type', 'application/json')->withStatus($code);
 };
 
-/* ----------------- Database ----------------- */
+/* -------------------------
+   DB Setup
+------------------------- */
+
 $container = new Container();
 $container->set('db', function () {
-    $pdo = new PDO('sqlite:/tmp/affwriter.db', '', '', [
+    $dsn = getenv('DB_DSN') ?: 'sqlite:/tmp/affwriter.db';
+    $pdo = new PDO($dsn, null, null, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     ]);
     $pdo->exec("PRAGMA journal_mode=WAL;");
-    $pdo->exec("CREATE TABLE IF NOT EXISTS users(
+    $pdo->exec("CREATE TABLE IF NOT EXISTS users (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL,
-        email TEXT NOT NULL,
-        password TEXT DEFAULT 'password'
-    )");
+        name TEXT, email TEXT, credits INT, credits_expiry TEXT
+    );");
     if (!$pdo->query("SELECT COUNT(*) FROM users")->fetchColumn()) {
-        $pdo->exec("INSERT INTO users(name,email) VALUES('Admin','admin@example.com')");
+        $pdo->exec("INSERT INTO users(name,email,credits,credits_expiry)
+                    VALUES ('Admin User','admin@example.com',5000,'2025-12-22')");
     }
     return $pdo;
 });
 
-/* ----------------- App + Middleware ----------------- */
 AppFactory::setContainer($container);
 $app = AppFactory::create();
 $pdo = $container->get('db');
 
+/* -------------------------
+   Middleware (CORS)
+------------------------- */
+
+$origins = getenv('CORS_ORIGINS') ?: 'https://affiliated-writer-dashboard.vercel.app,http://localhost:3000';
+$originList = array_map('trim', explode(',', $origins));
+
 $app->addRoutingMiddleware();
 $app->add(new CorsMiddleware([
-    "origin" => [
-        "https://affiliated-writer-dashboard.vercel.app",
-        "http://localhost:3000",
-        "/\.vercel\.app$/"
-    ],
-    "methods" => ["GET", "POST", "OPTIONS"],
-    "headers.allow" => ["Content-Type", "Authorization", "Origin", "Accept"],
+    "origin" => $originList,
+    "methods" => ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    "headers.allow" => ["Authorization", "Content-Type", "Accept", "Origin"],
     "credentials" => true,
-    "cache" => 0
+    "cache" => 0,
 ]));
 
-/* ----------------- Routes ----------------- */
+/* -------------------------
+   Routes
+------------------------- */
+
 // Health check
-$app->get('/', fn(Request $r, Response $res) =>
-    $json($res, ["status" => "ok", "message" => "Welcome!"])
-);
-$app->get('/api/db/ping', fn(Request $r, Response $res) =>
-    $json($res, ["db" => "up"])
-);
+$app->get('/', fn($r, $res) => $json($res, ["status" => "ok", "message" => "Welcome!"]));
+$app->get('/api/db/ping', fn($r, $res) => $json($res, ["db" => "up"]));
 
-// ✅ Login endpoint + alias
-$loginHandler = function (Request $r, Response $res) use ($readJson, $json, $pdo) {
-    $d = $readJson($r);
-    $email = $d['email'] ?? '';
-    $password = $d['password'] ?? '';
-
+/* ---- LOGIN ROUTE (single handler + alias) ---- */
+$loginHandler = function (Request $r, Response $res) use ($json, $readJson) {
+    $data = $readJson($r);
+    $email = $data['email'] ?? '';
+    $password = $data['password'] ?? '';
     if ($email === 'admin@example.com' && $password === 'password') {
         return $json($res, [
-            "success" => true,
-            "user" => ["name" => "Admin", "email" => $email],
-            "token" => "demo-token"
+            "token" => "dummy-jwt-token",
+            "user"  => ["name" => "Admin User", "email" => $email]
         ]);
     }
     return $json($res, ["error" => "Invalid credentials"], 401);
 };
 
-// ✅ Login route (main)
+// ✅ Keep one /api/auth/login
 $app->post('/api/auth/login', $loginHandler);
-
-// ✅ Alias route (for backward compatibility)
+// ✅ Add alias /auth/login — same handler, no duplication
 $app->post('/auth/login', $loginHandler);
 
-// both routes valid
-$app->post('/api/auth/login', $loginHandler);
-$app->post('/auth/login', $loginHandler);
-
-/* ----------------- Error middleware ----------------- */
+/* -------------------------
+   Error Middleware
+------------------------- */
 $app->addErrorMiddleware(true, true, true);
-$app->run();
+
+$psr17 = new Psr17Factory();
+$creator = new ServerRequestCreator($psr17, $psr17, $psr17, $psr17);
+$request = $creator->fromGlobals();
+$app->run($request);
