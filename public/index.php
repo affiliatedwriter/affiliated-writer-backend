@@ -87,6 +87,12 @@ $loginHandler = function (Request $r, Response $res) use ($readJson, $json, $pdo
     return $json($res, ["error" => "Invalid credentials"], 401);
 };
 
+// ✅ Login route (main)
+$app->post('/api/auth/login', $loginHandler);
+
+// ✅ Alias route (for backward compatibility)
+$app->post('/auth/login', $loginHandler);
+
 // both routes valid
 $app->post('/api/auth/login', $loginHandler);
 $app->post('/auth/login', $loginHandler);
