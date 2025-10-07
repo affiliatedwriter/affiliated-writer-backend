@@ -5,32 +5,32 @@ use DI\Container;
 use Slim\Factory\AppFactory;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+use Tuupola\Middleware\CorsMiddleware;
 use Throwable;
 use PDO;
-use Tuupola\Middleware\CorsMiddleware;
-use Nyholm\Psr7\Factory\Psr17Factory;
-use Nyholm\Psr7Server\ServerRequestCreator;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-// ---------------------------
-// JSON helpers
-// ---------------------------
-$readJson = function (Request $req): array {
+/* ==============================
+   🔧 Helpers
+============================== */
+
+function readJson(Request $req): array {
     $data = $req->getParsedBody();
     if (is_array($data)) return $data;
-    $raw = (string) $req->getBody();
-    return $raw ? (json_decode($raw, true) ?? []) : [];
-};
+    $raw = (string)$req->getBody();
+    return $raw ? (json_decode($raw, true) ?: []) : [];
+}
 
-$json = function (Response $res, $data, int $code = 200): Response {
-    $res->getBody()->write(json_encode($data, JSON_UNESCAPED_UNICODE));
+function jsonResponse(Response $res, $data, int $code = 200): Response {
+    $res->getBody()->write(json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
     return $res->withHeader('Content-Type', 'application/json')->withStatus($code);
-};
+}
 
-// ---------------------------
-// DB setup
-// ---------------------------
+/* ==============================
+   🔧 Container + SQLite Database
+============================== */
+
 $container = new Container();
 $container->set('db', function () {
     $dsn = getenv('DB_DSN') ?: 'sqlite:/tmp/affwriter.db';
@@ -40,47 +40,61 @@ $container->set('db', function () {
     return $pdo;
 });
 
-// ---------------------------
-// App setup
-// ---------------------------
+/* ==============================
+   ⚙️ Slim App + CORS Middleware
+============================== */
+
 AppFactory::setContainer($container);
 $app = AppFactory::create();
-$pdo = $container->get('db');
 
-// ---------------------------
-// CORS setup
-// ---------------------------
-$allowedOrigins = explode(',', getenv('CORS_ORIGINS') ?: 'https://affiliated-writer-dashboard.vercel.app,http://localhost:3000');
+// ✅ Allow front-end origins (Render + Vercel)
+$origins = getenv('CORS_ORIGINS') ?: 'https://affiliated-writer-dashboard.vercel.app,http://localhost:3000';
+$originList = array_map('trim', explode(',', $origins));
+
+// 🔥 CORS setup
+$app->addRoutingMiddleware();
 $app->add(new CorsMiddleware([
-    'origin' => $allowedOrigins,
-    'methods' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-    'headers.allow' => ['Authorization', 'Content-Type', 'Accept', 'Origin', 'X-Requested-With'],
-    'headers.expose' => ['Content-Type', 'Authorization'],
-    'credentials' => true,
-    'cache' => 0,
+    "origin" => $originList,
+    "methods" => explode(',', getenv('CORS_METHODS') ?: 'GET,POST,PUT,PATCH,DELETE,OPTIONS'),
+    "headers.allow" => explode(',', getenv('CORS_HEADERS') ?: 'Content-Type,Authorization'),
+    "credentials" => filter_var(getenv('CORS_CREDENTIALS') ?: true, FILTER_VALIDATE_BOOLEAN),
+    "cache" => (int)(getenv('CORS_CACHE') ?: 0),
 ]));
 
-// ---------------------------
-// Routes
-// ---------------------------
-$app->get('/', fn(Request $r, Response $res) => $json($res, ['status' => 'ok', 'message' => 'Welcome!']));
-$app->get('/api/db/ping', fn(Request $r, Response $res) => $json($res, ['db' => 'up']));
+/* ==============================
+   🧭 Routes
+============================== */
 
-$app->post('/api/auth/login', function (Request $r, Response $res) use ($readJson, $json) {
-    $body = $readJson($r);
-    if (($body['email'] ?? '') === 'admin@example.com' && ($body['password'] ?? '') === 'password') {
-        return $json($res, ['success' => true, 'user' => ['name' => 'Admin', 'email' => 'admin@example.com']]);
+// ✅ Health check
+$app->get('/', fn($r, $res) => jsonResponse($res, ["status" => "ok", "message" => "Welcome!"]));
+$app->get('/api/db/ping', function ($r, $res) use ($container) {
+    try {
+        $container->get('db')->query("SELECT 1");
+        return jsonResponse($res, ["db" => "up"]);
+    } catch (Throwable $e) {
+        return jsonResponse($res, ["db" => "down", "error" => $e->getMessage()], 500);
     }
-    return $json($res, ['success' => false, 'message' => 'Invalid credentials'], 401);
 });
 
-// ---------------------------
-// Error handling
-// ---------------------------
-$app->addErrorMiddleware(true, true, true);
+// ✅ Login endpoint
+$app->post('/auth/login', function (Request $r, Response $res) {
+    $body = readJson($r);
+    $email = $body['email'] ?? '';
+    $password = $body['password'] ?? '';
 
-$psr17 = new Psr17Factory();
-$creator = new ServerRequestCreator($psr17, $psr17, $psr17, $psr17);
-$request = $creator->fromGlobals();
+    if ($email === 'admin@example.com' && $password === 'password') {
+        return jsonResponse($res, [
+            "success" => true,
+            "token" => "demo-jwt-token",
+            "user" => ["name" => "Admin", "email" => $email]
+        ]);
+    }
+    return jsonResponse($res, ["success" => false, "message" => "Invalid credentials"], 401);
+});
 
-$app->run($request);
+/* ==============================
+   ⚙️ Error Middleware + Run
+============================== */
+
+$app->addErrorMiddleware(false, true, true);
+$app->run();
