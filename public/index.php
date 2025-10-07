@@ -1,13 +1,6 @@
 <?php
 declare(strict_types=1);
 
-/**
- * ✅ Affiliated Writer - Production Backend (Slim 4 + SQLite)
- * - Proper CORS for Vercel frontend
- * - Health route fixed
- * - Optimized for Render.com PHP runtime
- */
-
 use DI\Container;
 use Slim\Factory\AppFactory;
 use Psr\Http\Message\ResponseInterface as Response;
@@ -20,12 +13,14 @@ use Nyholm\Psr7Server\ServerRequestCreator;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-/* ---------------------------------------------
-   Helper Functions
-----------------------------------------------*/
+// ---------------------------
+// JSON helpers
+// ---------------------------
 $readJson = function (Request $req): array {
-    $raw = (string)$req->getBody();
-    return $raw ? (json_decode($raw, true) ?: []) : [];
+    $data = $req->getParsedBody();
+    if (is_array($data)) return $data;
+    $raw = (string) $req->getBody();
+    return $raw ? (json_decode($raw, true) ?? []) : [];
 };
 
 $json = function (Response $res, $data, int $code = 200): Response {
@@ -33,78 +28,59 @@ $json = function (Response $res, $data, int $code = 200): Response {
     return $res->withHeader('Content-Type', 'application/json')->withStatus($code);
 };
 
-/* ---------------------------------------------
-   DB Setup
-----------------------------------------------*/
+// ---------------------------
+// DB setup
+// ---------------------------
 $container = new Container();
 $container->set('db', function () {
     $dsn = getenv('DB_DSN') ?: 'sqlite:/tmp/affwriter.db';
     $pdo = new PDO($dsn);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $pdo->exec("PRAGMA journal_mode=WAL;");
-    $pdo->exec("PRAGMA busy_timeout=5000;");
+    $pdo->exec("PRAGMA foreign_keys = ON;");
     return $pdo;
 });
 
-/* ---------------------------------------------
-   App Setup
-----------------------------------------------*/
+// ---------------------------
+// App setup
+// ---------------------------
 AppFactory::setContainer($container);
 $app = AppFactory::create();
+$pdo = $container->get('db');
 
-/* ---------------------------------------------
-   ✅ Proper CORS Configuration
-----------------------------------------------*/
-$app->addRoutingMiddleware();
+// ---------------------------
+// CORS setup
+// ---------------------------
+$allowedOrigins = explode(',', getenv('CORS_ORIGINS') ?: 'https://affiliated-writer-dashboard.vercel.app,http://localhost:3000');
 $app->add(new CorsMiddleware([
-    "origin" => [
-        "https://affiliated-writer-dashboard.vercel.app",
-        "http://localhost:3000"
-    ],
-    "methods" => ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    "headers.allow" => [
-        "Authorization", "Content-Type", "Accept", "Origin", "X-Requested-With"
-    ],
-    "headers.expose" => ["Content-Length", "X-Knowledge"],
-    "credentials" => true,
-    "cache" => 0,
+    'origin' => $allowedOrigins,
+    'methods' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    'headers.allow' => ['Authorization', 'Content-Type', 'Accept', 'Origin', 'X-Requested-With'],
+    'headers.expose' => ['Content-Type', 'Authorization'],
+    'credentials' => true,
+    'cache' => 0,
 ]));
 
-/* ---------------------------------------------
-   Routes
-----------------------------------------------*/
+// ---------------------------
+// Routes
+// ---------------------------
+$app->get('/', fn(Request $r, Response $res) => $json($res, ['status' => 'ok', 'message' => 'Welcome!']));
+$app->get('/api/db/ping', fn(Request $r, Response $res) => $json($res, ['db' => 'up']));
 
-// Health check (for Render)
-$app->get('/', fn($r, $res) => $json($res, [
-    "status" => "ok",
-    "message" => "Welcome!",
-    "health" => "/api/health"
-]));
-$app->get('/api/health', fn($r, $res) => $json($res, ["ok" => true]));
-
-// ✅ Login endpoint (matches frontend)
-$app->post('/auth/login', function (Request $r, Response $res) use ($json, $readJson) {
+$app->post('/api/auth/login', function (Request $r, Response $res) use ($readJson, $json) {
     $body = $readJson($r);
-    $email = $body['email'] ?? '';
-    $password = $body['password'] ?? '';
-
-    if ($email === 'admin@example.com' && $password === 'password') {
-        return $json($res, [
-            "success" => true,
-            "message" => "Login successful",
-            "token" => "dummy-jwt-token"
-        ]);
+    if (($body['email'] ?? '') === 'admin@example.com' && ($body['password'] ?? '') === 'password') {
+        return $json($res, ['success' => true, 'user' => ['name' => 'Admin', 'email' => 'admin@example.com']]);
     }
-
-    return $json($res, ["success" => false, "message" => "Invalid credentials"], 401);
+    return $json($res, ['success' => false, 'message' => 'Invalid credentials'], 401);
 });
 
-/* ---------------------------------------------
-   Error Middleware + Run
-----------------------------------------------*/
-$app->addErrorMiddleware(false, true, true);
+// ---------------------------
+// Error handling
+// ---------------------------
+$app->addErrorMiddleware(true, true, true);
 
 $psr17 = new Psr17Factory();
 $creator = new ServerRequestCreator($psr17, $psr17, $psr17, $psr17);
 $request = $creator->fromGlobals();
+
 $app->run($request);
